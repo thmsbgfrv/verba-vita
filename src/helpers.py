@@ -1,4 +1,3 @@
-import random
 from src.gtranslator import GoogleTranslator
 
 
