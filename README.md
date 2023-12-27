@@ -22,7 +22,7 @@ This service provides a JSON API to retrieve and manage word definitions/transla
 2.  Build and run the Docker container using the provided `Dockerfile` and `docker-compose.yml`:
 
 ```bash
-docker-compose up --build
+docker compose up --build
 ```
 
 ## API Endpoints
