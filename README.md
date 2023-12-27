@@ -1,5 +1,8 @@
 # Verba Vita (Translation Service)
 
+- Author: Tahnasib Gafarov
+- Date: 27.12.2023
+
 ## Description
 
 This service provides a JSON API to retrieve and manage word definitions/translations. It integrates with Google Translate to fetch the required data.
