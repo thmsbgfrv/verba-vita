@@ -1,0 +1,33 @@
+version: "3.8"
+
+services:
+  verba-vita:
+    container_name: verba-vita
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    image: verba-vita-image
+    volumes:
+      - ./:/app
+    env_file:
+      - ./.env
+    ports:
+      - "8000:8000"
+    depends_on:
+      - mongodb
+
+  mongodb:
+    image: mongo
+    container_name: mongodb
+    restart: always
+    ports:
+      - "27017:27017"
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=admin
+      - MONGO_INITDB_ROOT_PASSWORD=secret
+    volumes:
+      - mongo_data:/data/db
+      - mongo_data:/data/configdb
+
+volumes:
+  mongo_data:
