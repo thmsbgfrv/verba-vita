@@ -1,6 +1,6 @@
 # Verba Vita (Translation Service)
 
-- Author: Tahnasib Gafarov
+- Author: Thmsbgfrv
 - Date: 27.12.2023
 
 ## Description
